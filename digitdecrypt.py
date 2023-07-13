@@ -27,19 +27,17 @@ Input: 13 Output: 4
 Input: 0 Output: 0 
 """
 
-class Solution:    
+class Solution:
     def digitdecrypt(self, num):
-            new=str(num)
-            counter=0
-            while len(new)>0:
-              counter+=int(new[0])
-              new=new[1:len(new)-1]
-            counter2=0
-            counter3=str(counter)
-            while len(counter3)>0:
-              counter2+=int(counter3[0])
-              counter3=counter3[1:len(counter3)-1]
-            return counter2
+      num2=int(num)
+      while num2>=10:
+        counter=str(num2)
+        counter2=0
+        while len(counter)>0:
+          counter2+=counter[0]
+          counter=counter[1:len(counter)-1]
+        num2=counter2
+
 def main():
     input1= input()
     input2 = int(input1)
