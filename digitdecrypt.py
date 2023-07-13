@@ -33,10 +33,12 @@ class Solution:
             counter=0
             while len(new)>0:
               counter+=int(new[0])
+              new=new[1:len(new)-1]
             counter2=0
             counter3=str(counter)
             while len(counter3)>0:
               counter2+=int(counter3[0])
+              counter3=counter3[1:len(counter3)-1]
             return counter2
 def main():
     input1= input()
