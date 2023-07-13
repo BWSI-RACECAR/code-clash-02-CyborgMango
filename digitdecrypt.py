@@ -29,14 +29,11 @@ Input: 0 Output: 0
 
 class Solution:
     def digitdecrypt(self, num):
-      num2=int(num)
-      while num2>=10:
-        counter=str(num2)
-        counter2=0
-        while len(counter)>0:
-          counter2+=int(counter[0])
-          counter=counter[1:len(counter)-1]
-        num2=counter2
+      while num>=10:
+        counter=0
+        for i in str(num):
+          counter+=i
+        num=counter
 
 def main():
     input1= input()
