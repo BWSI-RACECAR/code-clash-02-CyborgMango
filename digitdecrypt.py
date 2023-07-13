@@ -32,7 +32,7 @@ class Solution:
       while num>=10:
         counter=0
         for i in str(num):
-          counter+=i
+          counter+=int(i)
         num=counter
 
 def main():
