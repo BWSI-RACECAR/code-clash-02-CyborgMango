@@ -34,7 +34,7 @@ class Solution:
         counter=str(num2)
         counter2=0
         while len(counter)>0:
-          counter2+=counter[0]
+          counter2+=int(counter[0])
           counter=counter[1:len(counter)-1]
         num2=counter2
 
